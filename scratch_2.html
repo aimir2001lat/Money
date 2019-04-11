@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="">
+    <script src="jquery.js"></script>
+    <style>
+        .container {
+            border: 1px solid black;
+            max-width: 1200px;
+            padding: 10px;
+
+        }
+
+        .container1 {
+            border: 1px solid red;
+            width: 300px;
+
+            height: 300px;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            margin-bottom: 10px;
+
+        }
+
+        @media (max-width: 600px) {
+
+            .product {
+                flex-direction: column;
+
+            }
+
+            .container1 {
+                margin-bottom: 10px;
+            }
+
+            .container1:last-child {
+                margin-bottom: 0px;
+            }
+
+        }
+
+        .product:last-child {
+            margin-bottom: 0px;
+        }
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="product">
+        <div class="container1">
+            <div class="row">
+                <div>
+                    <img src="http://dom-eda.com/uploads/images/catalog/item/c6ebcf64ba/e87b941b85_500.jpg"
+                         style="width:100%;  ">
+                </div>
+                <div style="font-size: 30px;">Помидоры</div>
+            </div>
+            <div style=" text-align: center">Описание:<br>Самые лучшие помидоры</div>
+        </div>
+        <div class="container1"></div>
+        <div class="container1"></div>
+    </div>
+    <div class="product">
+        <div class="container1"></div>
+        <div class="container1"></div>
+        <div class="container1"></div>
+    </div>
+</div>
+
+
+</body>
+</html>
